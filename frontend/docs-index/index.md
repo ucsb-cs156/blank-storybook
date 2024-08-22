@@ -21,21 +21,15 @@ tbody tr:nth-child(even) {background-color: #f2f2f2;}
 <thead>
 <tr>
 <th colspan="1" style="text-align:center">Backend</th>
-<th colspan="1" style="text-align:center">Frontend</th>
-</tr>
-<tr>
-<th>Javadoc</th>
-<th>Storybook (local)</th>
-<th>Storybook (chromatic)</th>
-<th>Chromatic Build</th>
+<th colspan="3" style="text-align:center">Frontend (Storybook/Chromatic)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="javadoc">javadoc</a></td>
-<td><a href="storybook">storybook</a></td>
-<td><a href="chromatic">chromatic</a></td>
-<td><a href="chromatic/build.html">chromatic build</a></td>
+<td><a href="storybook">local sb</a></td>
+<td><a href="chromatic">chromatic sb</a></td>
+<td><a href="chromatic/build.html">build info</a></td>
 </tr>
 </tbody>
 </table>
@@ -74,16 +68,16 @@ tbody tr:nth-child(even) {background-color: #f2f2f2;}
 <tr>
 <th colspan="3" style="text-align:center">Pull Request</th>
 <th colspan="1" style="text-align:center">Backend</th>
-<th colspan="1" style="text-align:center">Frontend</th>
+<th colspan="3" style="text-align:center">Frontend (Storybook/Chromatic)</th>
 </tr>
 <tr>
 <th>PR</th>
 <th>Branch</th>
 <th>Author</th>
 <th>Javadoc</th>
-<th>Storybook (local)</th>
-<th>Storybook (chromatic)</th>
-<th>Chromatic Build</th>
+<th>local sb</th>
+<th>chromatic sb</th>
+<th>build info</th>
 </tr>
 </thead>
 <tbody>
@@ -93,9 +87,9 @@ tbody tr:nth-child(even) {background-color: #f2f2f2;}
 <td>{{pr.headRefName}}</td>
 <td>{{pr.author.login}}</td>
 <td><a href="prs/{{pr.number}}/javadoc">javadoc</a></td>
-<td><a href="prs/{{pr.number}}/storybook">storybook</a></td>
-<td><a href="prs/{{pr.number}}/chromatic">chromatic</a></td>
-<td><a href="prs/{{pr.number}}/chromatic/build.html">chromatic build</a></td>
+<td><a href="prs/{{pr.number}}/storybook">local sb</a></td>
+<td><a href="prs/{{pr.number}}/chromatic">chromatic sb</a></td>
+<td><a href="prs/{{pr.number}}/chromatic/build.html">build info</a></td>
 </tr>
 {% endfor %}
 </tbody>
