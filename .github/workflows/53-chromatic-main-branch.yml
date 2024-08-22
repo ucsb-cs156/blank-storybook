@@ -49,17 +49,17 @@ jobs:
 
       - name: Build redirect file
         working-directory: frontend
-        run: | # Create a redirect file to redirect to the storybook folder
-          mkdir -p storybook_static
-          echo "<meta http-equiv=refresh content=0;url=${{steps.run_chromatic.outputs.storybookUrl}}>" > storybook_static/index.html
+        run: | # Create a redirect file to redirect to the storybook online
+          mkdir -p chromatic_static
+          echo "<meta http-equiv=refresh content=0;url=${{steps.run_chromatic.outputs.storybookUrl}}>" > chromatic_static/index.html
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
             branch: gh-pages # The branch the action should deploy to.
-            folder: frontend/storybook_static # The folder that the build-storybook script generates files.
+            folder: frontend/chromatic_static # source
             clean: true # Automatically remove deleted files from the deploy branch
-            target-folder: storybook # The folder that we serve our Storybook files from
+            target-folder: chromatic # destination 
        
      
    
