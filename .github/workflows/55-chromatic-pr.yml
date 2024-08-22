@@ -95,6 +95,7 @@ jobs:
       run: | # Create a redirect file to redirect to the storybook online
           mkdir -p chromatic_static_${{ needs.get-pr-num.outputs.pr_number }}
           echo "<meta http-equiv=refresh content=0;url=${{steps.run_chromatic.outputs.storybookUrl}}>" > chromatic_static_${{ needs.get-pr-num.outputs.pr_number }}/index.html
+          echo "<meta http-equiv=refresh content=0;url=${{steps.run_chromatic.outputs.url}}>" > chromatic_static_${{ needs.get-pr-num.outputs.pr_number }}/build.html
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
