@@ -23,4 +23,4 @@ repo_name: "TBD"
 repo: ucsb-cs156/blank-storybook
 owner: ucsb-cs156
 repo_name: blank-storybook
-pull_requests: [{"author":{"id":"MDQ6VXNlcjExMTkwMTc=","is_bot":false,"login":"pconrad","name":"Phill Conrad"},"headRefName":"pc-tryPRWorkflow","number":1,"title":"pc - test workflows 53 and 55 (can only be done by pushing)","url":"https://github.com/ucsb-cs156/blank-storybook/pull/1"}]
+pull_requests: []
